@@ -51,10 +51,18 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg absolute top-[65px] w-full z-20">
           <ul className="flex flex-col items-center gap-4 py-4 text-[18px] font-bold text-gray-600 cursor-pointer">
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li onClick={toggleMenu}>
+              <Link to="/">Home</Link>
+            </li>
+            <li onClick={toggleMenu}>
+              <Link to="/about">About</Link>
+            </li>
+            <li onClick={toggleMenu}>
+              <Link to="/project">Projects</Link>
+            </li>
+            <li onClick={toggleMenu}>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
           <div className="flex justify-center py-2">
             <div className="rounded-full cursor-pointer">
