@@ -11,6 +11,10 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const showProfile = () => {
+    alert("Ready")
+  }
+
   return (
     <header className="w-full py-4 flex justify-center items-center shadow-lg sticky top-0 left-0 bg-white z-10">
       <div className="container w-[90%] md:w-[85%] flex justify-between items-center">
@@ -40,6 +44,7 @@ const Header = () => {
         <div className="profile cursor-pointer hidden md:block">
           <div className="rounded-full">
             <img
+            onClick={showProfile}
               src={profilePic}
               className="w-[40px] md:w-[50px] rounded-full"
             />
