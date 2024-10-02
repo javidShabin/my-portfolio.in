@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const Hero = () => {
   const isProfile = useSelector((state) => state.profile.isvalue);
-  console.log(isProfile);
+  
   return (
     <>
       <main className="relative bg-gradient-to-t from-white to-violet-300 h-[88vh] w-full flex justify-center items-center ">

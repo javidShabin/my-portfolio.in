@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { profilePic } from "../assets";
-import { Logs } from "lucide-react";
+import { Logs, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { lessProfile, showPRofile } from "../redux/features/profileSlice";
@@ -61,7 +61,10 @@ const Header = () => {
           </div>
         </div>
         <div className="toggle-menu block md:hidden" onClick={toggleMenu}>
-          <Logs />
+            {
+                !isMenuOpen ? <Logs /> : <X/>
+            }
+          
         </div>
       </div>
 
