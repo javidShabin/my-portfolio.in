@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { profilePic } from "../assets";
-import { Link, Logs } from "lucide-react";
+import { Logs } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,18 +20,18 @@ const Header = () => {
 
         {/* Menu for larger screens */}
         <ul className="hidden md:flex items-center gap-4 md:gap-7 text-[14px] md:text-[18px] font-bold text-gray-600 cursor-pointer">
-          <Link to={"/"}>
-            <li>Home</li>
-          </Link>
-          <Link to={"/about"}>
-            <li>About</li>
-          </Link>
-          <Link to={"/project"}>
-            <li>Projects</li>
-          </Link>
-          <Link to={"/contact"}>
-            <li>Contact</li>
-          </Link>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/project">Projects</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
 
         <div className="profile cursor-pointer hidden md:block">
