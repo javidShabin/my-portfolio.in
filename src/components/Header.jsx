@@ -32,6 +32,9 @@ const Header = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          <li className="py-1 px-4 bg-[#695aa6] text-white rounded-lg">
+            <Link to="/contact">Follow Me</Link>
+          </li>
         </ul>
 
         <div className="profile cursor-pointer hidden md:block">
