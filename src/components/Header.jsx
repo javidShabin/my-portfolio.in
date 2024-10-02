@@ -9,14 +9,13 @@ const Header = () => {
           <h1>Javid Shabin</h1>
         </div>
 
-        <ul className="flex items-center gap-7 font-semibold">
+        <ul className="flex items-center gap-7 text-[18px] font-bold text-gray-600 cursor-pointer ">
           <li>Home</li>
           <li>About</li>
           <li>Projects</li>
           <li>Contact</li>
-          <li></li>
         </ul>
-        <div className="profile">
+        <div className="profile cursor-pointer">
           <div className="rounded-full">
             <img src={profilePic} className="w-[50px] rounded-full" />
           </div>
