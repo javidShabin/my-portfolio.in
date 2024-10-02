@@ -83,8 +83,12 @@ const Header = () => {
             </li>
           </ul>
           <div className="flex justify-center py-2">
-            <div className="rounded-full cursor-pointer">
-              <img src={profilePic} className="w-[50px] rounded-full" />
+            <div className="rounded-full cursor-pointer" onClick={toggleMenu}>
+              <img
+                onClick={showProfile}
+                src={profilePic}
+                className="w-[50px] rounded-full"
+              />
             </div>
           </div>
         </div>
