@@ -2,18 +2,28 @@ import React, { useState } from "react";
 import { profilePic } from "../assets";
 import { Logs } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { lessProfile, showPRofile } from "../redux/features/profileSlice";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProfileShow, setIsProfileShow] = useState(false);
 
+  const dispatch = useDispatch();
   // Toggle function to show/hide menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const showProfile = () => {
-    alert("Ready")
-  }
+    setIsProfileShow((prevState) => !prevState);
+
+    if (isProfileShow) {
+      dispatch(lessProfile());
+    } else {
+      dispatch(showPRofile());
+    }
+  };
 
   return (
     <header className="w-full py-4 flex justify-center items-center shadow-lg sticky top-0 left-0 bg-white z-10">
@@ -44,7 +54,7 @@ const Header = () => {
         <div className="profile cursor-pointer hidden md:block">
           <div className="rounded-full">
             <img
-            onClick={showProfile}
+              onClick={showProfile}
               src={profilePic}
               className="w-[40px] md:w-[50px] rounded-full"
             />
