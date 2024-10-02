@@ -5,6 +5,7 @@ h3,
 li {
   font-family: "Baloo Paaji 2", sans-serif;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
