@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { profilePic } from "../assets";
-import { Logs } from "lucide-react";
+import { Link, Logs } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,10 +19,18 @@ const Header = () => {
 
         {/* Menu for larger screens */}
         <ul className="hidden md:flex items-center gap-4 md:gap-7 text-[14px] md:text-[18px] font-bold text-gray-600 cursor-pointer">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <Link to={"/"}>
+            <li>Home</li>
+          </Link>
+          <Link to={"/about"}>
+            <li>About</li>
+          </Link>
+          <Link to={"/project"}>
+            <li>Projects</li>
+          </Link>
+          <Link to={"/contact"}>
+            <li>Contact</li>
+          </Link>
         </ul>
 
         <div className="profile cursor-pointer hidden md:block">
@@ -48,7 +56,7 @@ const Header = () => {
             <li>Contact</li>
           </ul>
           <div className="flex justify-center py-2">
-          <div className="rounded-full cursor-pointer">
+            <div className="rounded-full cursor-pointer">
               <img src={profilePic} className="w-[50px] rounded-full" />
             </div>
           </div>
