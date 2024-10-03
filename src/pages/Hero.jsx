@@ -7,7 +7,7 @@ const Hero = () => {
   
   return (
     <>
-      <main className="relative bg-gradient-to-t from-white to-violet-300 h-[88vh] w-full flex justify-center items-center ">
+      <main className="relative bg-gradient-to-t from-white to-violet-300 h-[87vh] w-full flex justify-center items-center ">
         {/* Profile details section */}
         {isProfile && (
           <div className="absolute top-4 right-4 bg-white w-[250px] py-2 px-3 rounded-md shadow-xl ">
@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="container w-[80%] flex justify-center">
           <div>
             <h1 className="text-6xl sm:text-7xl md:text-8xl font-extrabold text-justify text-gray-700 md:tracking-[6px] ">
-              <span className="text-5xl md:text-7xl  text-gray-600">HI!</span>
+              <span className="text-5xl md:text-7xl text-gray-600">HI!</span>
               <br />
               I am Javid <br />
               Shabin
