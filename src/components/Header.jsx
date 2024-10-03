@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full py-4 flex justify-center items-center shadow-lg sticky top-0 left-0 bg-white z-10">
+    <header className="w-full py-4 flex justify-center items-center shadow-lg sticky top-0 left-0 bg-violet-50 z-10">
       <div className="container w-[90%] md:w-[85%] flex justify-between items-center">
         <div className="logo text-[24px] md:text-[32px] font-extrabold">
           <h1 className=" text-gray-700">Javid Shabin</h1>
