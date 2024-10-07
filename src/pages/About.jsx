@@ -20,6 +20,7 @@ const About = () => {
           has been exciting, and I'm always eager to collaborate on new projects
           and grow as a developer.
         </p>
+        <button className="py-2 px-4 border-2 border-violet-400 font-semibold rounded-lg mt-5">Download Resume</button>
       </div>
     </main>
   );
